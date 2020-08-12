@@ -24,7 +24,7 @@ searchButton.addEventListener('input', function (e) {
     let cards=document.getElementsByClassName("noteCard");
     Array.from(cards).forEach(element=>
     {
-        let cardTxt=element=.getElementsByTagName('p')[0].innerText;
+        let cardTxt=element.getElementsByTagName('p')[0].innerText;
         if(cardTxt.includes(searchStr))
         {
             element.style.display="block";
